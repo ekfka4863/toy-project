@@ -1,0 +1,294 @@
+/* reset.css 연결 */
+@import "./reset.css";
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+
+/* common css */
+/* cf. https://lovediv.tistory.com/2 */
+.a11y-hidden{
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	/* IE 6,7 */
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+}
+.no-style-to-a-tag{
+	text-decoration: none;
+	color: black;
+}
+.special-font-style{
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+
+
+/* header */
+.header{
+	width: 100%;
+	height: 160px;
+	/* height: 18vh; */
+	background-color: #D9A8A8;
+	position: relative;
+}
+.header-h1-img {
+	display: block;
+	margin: 0px auto;
+	padding: 30px 0;
+}
+.header span{
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 20px;
+}
+.header > button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 35px 20px 0 0;
+	padding: 0;
+	border: none;
+	width: 35px;
+	height: 35px;
+	display: block;
+	background: url(./images/more-test-button.svg) no-repeat;
+	background-size: cover;
+	/* background-color: transparent; */
+	/* background-color: aquamarine; */
+}
+/* .header button > img{
+	width: 35px;
+} */
+.header > button:hover{
+	/* 이거 나중에 고치기! */
+	cursor: pointer;
+}
+
+
+/* main */
+.main{
+	background-color: #FDFDFD;
+	height: 65vh;
+}
+.main h2{
+	width: fit-content;
+	color: #DFCDC7;
+	font-size: 30px;
+	margin: 0 auto;
+	padding: 14px 0;
+}
+/* .color-palette */
+.color-palette{
+	background-color: #E5E5E5;
+	margin: 0 auto;
+	width: 85%;
+	height: 370px;
+	padding: 10px;
+}
+.color-palette > div{
+	display: flex;
+	justify-content: space-around;
+}
+.color-palette > div{
+	padding: 7px;
+}
+.circle{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+/* palette 첫 번째 row */
+.row-wrapper-1 .circle:first-child{
+	background-color: #5F4029;
+}
+.row-wrapper-1 .circle:nth-child(2){
+	background-color: #995833;
+}
+.row-wrapper-1 .circle:nth-child(3){
+	background-color: #BA8163;
+}
+.row-wrapper-1 .circle:nth-child(4){
+	background-color: #F2AD3D;
+}
+.row-wrapper-1 .circle:nth-child(5){
+	background-color: #9D8137;
+}
+.row-wrapper-1 .circle:last-child{
+	background-color: #C5BA76;
+}
+/* palette 두 번째 row */
+.row-wrapper-2 .circle:first-child{
+	background-color: #373236;
+}
+.row-wrapper-2 .circle:nth-child(2){
+	background-color: #543647;
+}
+.row-wrapper-2 .circle:nth-child(3){
+	background-color: #4F0C1D;
+}
+.row-wrapper-2 .circle:nth-child(4){
+	background-color: #EC682E;
+}
+.row-wrapper-2 .circle:nth-child(5){
+	background-color: #774716;
+}
+.row-wrapper-2 .circle:last-child{
+	background-color: #9B4F27;
+}
+/* palette 세 번째 row */
+.row-wrapper-3 .circle:first-child{
+	background-color: #D69C6E;
+}
+.row-wrapper-3 .circle:nth-child(2){
+	background-color: #F1A93C;
+}
+.row-wrapper-3 .circle:nth-child(3){
+	background-color: #A49254;
+}
+.row-wrapper-3 .circle:nth-child(4){
+	background-color: #898464;
+}
+.row-wrapper-3 .circle:nth-child(5){
+	background-color: #515457;
+}
+.row-wrapper-3 .circle:last-child{
+	background-color: #D5BAAC;
+}
+/* palette 네 번째 row */
+.row-wrapper-4 .circle:first-child{
+	background-color: #762F32;
+}
+.row-wrapper-4 .circle:nth-child(2){
+	background-color: #EE7466;
+}
+.row-wrapper-4 .circle:nth-child(3){
+	background-color: #A16646;
+}
+.row-wrapper-4 .circle:nth-child(4){
+	background-color: #C96929;
+}
+.row-wrapper-4 .circle:nth-child(5){
+	background-color: #E78C5C;
+}
+.row-wrapper-4 .circle:last-child{
+	background-color: #F1994B;
+}
+/* palette 다섯 번째 row */
+.row-wrapper-5 .circle:first-child{
+	background-color: #F9E4C0;
+}
+.row-wrapper-5 .circle:nth-child(2){
+	background-color: #CFAD50;
+}
+.row-wrapper-5 .circle:nth-child(3){
+	background-color: #879D82;
+}
+.row-wrapper-5 .circle:nth-child(4){
+	background-color: #ACB2A3;
+}
+.row-wrapper-5 .circle:nth-child(5){
+	background-color: #2C6976;
+}
+.row-wrapper-5 .circle:last-child{
+	background-color: #EC604D;
+}
+
+/* start button */
+.start-test-btn{
+	border: none;
+	background-color: transparent;
+	display: block;
+	margin: 20px auto;
+	background-image: url(./images/start-btn.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 90px;
+	padding: 20px;
+}
+/* 이것도 고치기! */
+.start-test-btn:hover{
+	cursor: pointer;
+}
+.start-test-btn > img{
+	/* width: 80px;
+	height: 90px; */
+	
+}
+
+
+
+/* footer */
+.footer{
+	z-index: -9999;
+	width: 100%;
+	/* height: 350px; */
+	height: 30vh;
+	/* background-color: aqua; */
+	position: relative;
+	bottom: 0;
+}
+.footer-background-img{
+	width: 100%;
+	object-fit: cover;
+	min-height: 30vh;
+}
+.footer-address{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	font-weight: 600;
+}
+.footer-address p{
+	margin-bottom: 5px;
+}
+.footer-address p, .footer-address a{
+	color: #879D82;
+	font-size: 0.5rem;
+	vertical-align: middle;
+}
+.sns-icons-wrapper{
+	display: flex;
+}
+.sns-icons-wrapper a{
+	/* width: fit-content; */
+}
+.sns-icons-wrapper i{
+	/* justify-content: space-between; */
+	font-size: 2rem;
+}
+
+
+/* 미디아쿼리 */
+/* cf. https://m.blog.naver.com/PostView.nhn?blogId=anedthh&logNo=221311898334&proxyReferer=https:%2F%2Fwww.google.co.kr%2F */
+/* mobile 버전 디자인 - 분기점 */
+@media (max-width: 768px) {
+	.header-h1-img {
+		/* width: 197px; */
+	}
+}
+
+/* tablet 버전 디자인 - 분기점 */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.header-h1-img {
+		/* width: 220px; */
+	}
+}
+
+/* pc 버전 디자인 - 분기점 */
+@media (min-width: 1025px) {
+	.header-h1-img {
+		/* width: 250px; */
+		
+	}
+}
+

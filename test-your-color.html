@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test your color!</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./test-your-color.css">
+	<script defer src="./test-your-color.js"></script>
+</head>
+
+<body>
+	<!-- 헤더 섹션 -->
+	<header class="header">
+		<h1 class="a11y-hidden">Personal Color Test</h1>
+		<img class="header-h1-img" src="./images/header-h1-img.svg" alt="">
+		<span class="special-font-style">퍼스널 컬러 테스트로 당신의 성격을 알아보세요</span>	
+		<button type="button" aria-roledescription="다른 심리테스트를 원하신다면 버튼을 클릭하십시오.">
+			<!-- <img src="./images/more-test-button.svg" alt=""> -->
+		</button>
+
+		<!-- more-test-button을 누르면 나오는 test list들... -->
+		<!-- <h3>menu</h3>
+			<ul class="more-test-menu-list">
+			<li class="color-test-1"><a href="#">color test 1</a></li>
+			<li class="color-test-2"><a href="#">color test 2</a></li>
+			<li class="color-test-3"><a href="#">color test 3</a></li>
+		</ul> 
+		cf. https://codepen.io/nikhil/details/sicrK -->
+	</header>
+
+	<!-- 메인 섹션 -->
+	<main class="main">
+		<h2 class="special-font-style">What color do you like?</h2>
+		<div class="color-palette">
+			<div class="row-wrapper-1">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="row-wrapper-2">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="row-wrapper-3">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="row-wrapper-4">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="row-wrapper-5">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+		</div>
+		<!-- 이거 나중에 고치기! -->
+		<!-- <button class="start-test-btn" type="button" class="special-font-style" aria-roledescription="현재 페이지에 있는 컬러 심리테스트를 시작하시려면 버튼을 누르세요.">
+			<img src="./images/start-btn.svg" alt="">
+		</button> -->
+		<input class="start-test-btn" type="button" />
+	</main>	
+
+	<!-- 푸터 섹션 -->
+	<footer class="footer">
+		<img class="footer-background-img" src="./images/footer-background-img-2.svg"/>
+		<address class="footer-address">
+			<p>&copy; 2021 Charlotte<br><br>
+			대한민국(Seoul, South-Korea)</p>
+			<a class="no-style-to-a-tag" href="mialto:email: _____@gmail.com">email: _____@gmail.com</a><br>
+			<a class="no-style-to-a-tag" href="tel:+010333344444">(010) 3333 4444</a>
+			<!-- 푸터 좌측하단에 배치! -->
+			<div class="sns-icons-wrapper">
+				<a href="#" class="github-icon no-style-to-a-tag"><i class="fab fa-github"></i></a>
+				<a href="#" class="facebook-icon no-style-to-a-tag"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" class="instagram-icon no-style-to-a-tag"><i class="fab fa-instagram-square"></i></a>
+			</div>
+		</address>
+	</footer>
+
+
+</body>
+</html>
