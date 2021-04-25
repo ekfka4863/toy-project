@@ -76,14 +76,15 @@
 /* main */
 .main{
 	background-color: #FDFDFD;
-	height: 65vh;
+	min-height: 55vh;
+	overflow: auto;
 }
 .main h2{
 	width: fit-content;
 	color: #DFCDC7;
 	font-size: 30px;
 	margin: 0 auto;
-	padding: 14px 0;
+	padding: 20px 0;
 }
 /* .color-palette */
 .color-palette{
@@ -203,32 +204,30 @@
 
 /* start button */
 .start-test-btn{
-	border: none;
+	border: transparent;
 	background-color: transparent;
+	/* background-color: yellow; */
 	display: block;
 	margin: 20px auto;
-	background-image: url(./images/start-btn.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 80px;
-	height: 90px;
-	padding: 20px;
+	padding: 2px;
 }
-/* 이것도 고치기! */
-.start-test-btn:hover{
+.start-test-btn:hover, .start-test-btn img:hover{
 	cursor: pointer;
 }
+.start-test-btn img:active{
+	height: 51px;
+	transition: 0.1s ease;
+}
 .start-test-btn > img{
-	/* width: 80px;
-	height: 90px; */
-	
+	width: 100px;
+	height: 50px;
 }
 
 
 
 /* footer */
 .footer{
-	z-index: -9999;
+	z-index: -1;
 	width: 100%;
 	/* height: 350px; */
 	height: 30vh;
@@ -239,6 +238,10 @@
 .footer-background-img{
 	width: 100%;
 	object-fit: cover;
+	/* background-color: #2C6976;
+	padding: 0;
+	margin-bottom: 0;
+	object-fit: fill; */
 	min-height: 30vh;
 }
 .footer-address{
@@ -256,16 +259,30 @@
 	font-size: 0.5rem;
 	vertical-align: middle;
 }
+/* 푸터 sns wrapper div */
 .sns-icons-wrapper{
+	/* background-color: yellow; */
 	display: flex;
+	/* justify-content: space-around; */
 }
 .sns-icons-wrapper a{
-	/* width: fit-content; */
+	/* background-color: pink; */
+	
+}
+.sns-icons-wrapper i:hover{
+	cursor: pointer;
+}
+.sns-icons-wrapper i:active{
+	color: #879D82;
+	font-size: 1.5rem;
 }
 .sns-icons-wrapper i{
-	/* justify-content: space-between; */
-	font-size: 2rem;
+	/* background-color: pink; */
+	font-size: 1.4rem;
+	padding: 3px 6px 3px 0px;
 }
+
+
 
 
 /* 미디아쿼리 */
