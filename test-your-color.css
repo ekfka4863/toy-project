@@ -28,6 +28,142 @@
 }
 
 
+/* ----------------------------------- */
+
+/* more-test-menu-hidden-wrapper */
+.more-test-menu-hidden-wrapper{
+	position: fixed;
+	top: 0;
+	right: -165px;
+	z-index: 1;
+}
+.more-test-menu-hidden-wrapper  h3{
+	color: aliceblue;
+	font-size: 1.6rem;
+	text-align: center;
+	background-color: #D5BAAC;
+	padding: 10px;
+}
+.more-test-menu-hidden-wrapper ul{
+	height: 100vh;
+	/* background-color: #879D82; */
+	background-color: rgba(213, 186, 172, 0.97);
+}
+.more-test-menu-hidden-wrapper li{
+	padding: 10px;
+}
+.more-test-menu-hidden-wrapper li:first-child{
+	background-color: #ACB2A3;
+}
+.more-test-menu-hidden-wrapper li:nth-child(2){
+	background-color: #D69C6E;
+}
+.more-test-menu-hidden-wrapper li:last-child{
+	background-color: #515457;
+}
+.more-test-menu-hidden-wrapper a{
+	color: aliceblue;
+	font-size: 1.5rem;
+	text-align: center;
+} 
+
+.close-more-test-menu-btn{
+	position: absolute;
+	top: 0;
+	left: -43px;
+	border: transparent;
+	/* background-color: transparent; */
+	background-color: #D5BAAC;
+	padding: 0;
+}
+.close-more-test-menu-btn:hover{
+	cursor: pointer;
+}
+.close-more-test-menu-btn:active{
+	width: 45px;
+	height: 45px;
+}
+.close-more-test-menu-btn img{
+	width: 43px;
+	height: 42px;
+} 
+
+
+
+/* ----------------------------------- */
+
+/* .start-test-btn 클릭시 모달창 */
+.test-modal-wrapper{
+	display: none;
+	position: relative;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	margin-top: 9vh;
+	/* background-color: #879D82; */
+	background-color: rgba(192, 200, 190);
+}
+.test-modal-window{
+	position: absolute;
+	background-color: rgba(70, 118, 129);
+  width: 500px;
+	height: 500px;
+	top: 34%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* cf. 포지션 앱솔루트 하고도, 가운데 정렬하는 방법: 
+	        https://firerope.tistory.com/4 */
+}
+.test-modal-btns{
+	display: flex;
+	justify-content: space-between;
+}
+.test-modal-btns button:first-child, 
+.test-modal-btns button:last-child{
+	width: fit-content;
+	border: transparent;
+	background-color: transparent;
+	padding: 1px 2px 0px 2px;
+	margin: 5px;
+}
+.test-modal-btns button:first-child{
+	order: 2;
+}
+.test-modal-btns button:first-child:hover, 
+.test-modal-btns button:last-child:hover{
+	cursor: pointer;
+}
+.test-modal-btns button:first-child:active, 
+/* 이 부분 고치기! */
+.test-modal-btns button:last-child:active{
+	/* width: 51px;
+	height: 31px;
+	transition: 0.5s ease; */
+}
+.test-modal-btns button:first-child img,
+.test-modal-btns button:last-child img{
+	width: 50px;
+	height: 30px;
+}
+.test-modal-contents{
+	/* border: 1px solid black; */
+}
+#test-modal-contents-paragraph{
+	padding: 15px 5px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	color: rgb(203, 215, 226);
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
 
 /* header */
 .header{
@@ -49,29 +185,30 @@
 	color: #ffffff;
 	font-size: 20px;
 }
-.header > button{
+.open-more-test-menu-btn{
 	position: absolute;
 	top: 0;
 	right: 0;
 	margin: 35px 20px 0 0;
 	padding: 0;
-	border: none;
+	/* width: fit-content;
+	height: fit-content; */
+	border: transparent;
+	background-color: transparent;
+}
+.open-more-test-menu-btn > img{
+	/* background-color: aquamarine; */
 	width: 35px;
 	height: 35px;
-	display: block;
-	background: url(./images/more-test-button.svg) no-repeat;
-	background-size: cover;
-	/* background-color: transparent; */
-	/* background-color: aquamarine; */
 }
-/* .header button > img{
-	width: 35px;
-} */
-.header > button:hover{
-	/* 이거 나중에 고치기! */
+.open-more-test-menu-btn:hover{
 	cursor: pointer;
 }
-
+.open-more-test-menu-btn:active{
+	width: 37px;
+	height: 39px;
+	transition: 0.4s ease;
+}
 
 /* main */
 .main{
@@ -283,6 +420,8 @@
 }
 
 
+
+/* ----------------------------------- */
 
 
 /* 미디아쿼리 */

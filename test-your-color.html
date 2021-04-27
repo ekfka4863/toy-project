@@ -13,26 +13,60 @@
 </head>
 
 <body>
+	<!-- open-more-test-menu button을 누르면 나오는 test list들... -->
+	<div class="more-test-menu-hidden-wrapper" >
+		<h3>Menu</h3>
+		<ul class="more-test-menu-list">
+			<li class="color-test-1"><a class="no-style-to-a-tag special-font-style" href="#">Color Test 1</a></li>
+			<li class="color-test-2"><a class="no-style-to-a-tag special-font-style" href="#">Color Test 2</a></li>
+			<li class="color-test-3"><a class="no-style-to-a-tag special-font-style" href="#">Color Test 3</a></li>
+		</ul> 	
+		<button class="close-more-test-menu-btn" type="button" aria-roledescription="메뉴창을 닫으시려면 버튼을 클릭하십시오.">
+			<img src="./images/cloce-more-test-menu-2.svg" alt="" />
+		</button>	
+	</div>
+	<!--  cf. https://codepen.io/nikhil/details/sicrK -->
+
 	<!-- 헤더 섹션 -->
 	<header class="header">
 		<h1 class="a11y-hidden">Personal Color Test</h1>
 		<img class="header-h1-img" src="./images/header-h1-img.svg" alt="">
-		<span class="special-font-style">다양한 컬러 테스트로 당신의 성격을 알아보세요</span>	
-		<button type="button" aria-roledescription="다른 심리테스트를 원하신다면 버튼을 클릭하십시오.">
-			<!-- <img src="./images/more-test-button.svg" alt=""> -->
+		<span class="special-font-style">다양한 컬러 테스트로 당신의 성격을 알아보세요</span>
+		<button class="open-more-test-menu-btn" type="button" aria-roledescription="다른 심리테스트를 원하신다면 버튼을 클릭하십시오.">
+			<img src="./images/open-more-test-menu.svg" alt="" />
 		</button>
-
-		<!-- more-test-button을 누르면 나오는 test list들... -->
-		<!-- <h3>menu</h3>
-			<ul class="more-test-menu-list">
-			<li class="color-test-1"><a href="#">color test 1</a></li>
-			<li class="color-test-2"><a href="#">color test 2</a></li>
-			<li class="color-test-3"><a href="#">color test 3</a></li>
-		</ul> 
-		cf. https://codepen.io/nikhil/details/sicrK -->
 	</header>
 
 	<!-- 메인 섹션 -->
+
+		<!-- start-test-btn 클릭시 모달창 열리면서 심리 테스트 시작 -->
+		<div class="test-modal-wrapper">
+			<div class="test-modal-window">
+				<div class="test-modal-btns">
+					<button class="next-test-btn" type="button" aria-roledescription="테스트를 종료하려면 해당 버튼을 클릭하세요.">
+						<img src="./images/next-btn.svg" alt="">
+					</button>
+					<button class="quit-test-btn" type="button" aria-roledescription="다음 질문으로 넘어가시려면 해당 버튼을 클릭하세요.">
+						<img src="./images/quit-btn.svg" alt="">
+					</button>
+				</div>
+				<div class="test-modal-contents">
+					<p id="test-modal-contents-paragraph" class="special-font-style">
+						컬러 심리 테스트를 시작하겠습니다. <br>
+						테스트를 중단하고 싶으시다면 왼쪽에 있는 Quit 버튼을, <br>
+						다음 질문으로 넘어가고 싶으시다면 오른쪽에 있는 Next 버튼을 누르세요. <br>
+						<br>
+						<br>
+						질문 1.<br>
+						아래의 색들 중에 가장 마음에 드는 색 하나, <br>
+						두 번째로 마음에 드는 색 하나를 정하세요. 
+					</p>
+					<!-- <img src="" alt=""> -->
+				</div>
+			</div>
+		</div>
+
+	
 	<main class="main">
 		<h2 class="special-font-style">What color do you like?</h2>
 		<div class="color-palette">
@@ -77,11 +111,9 @@
 				<div class="circle"></div>
 			</div>
 		</div>
-		<!-- 이거 나중에 고치기! -->
 		<button class="start-test-btn" type="button" class="special-font-style" aria-roledescription="현재 페이지에 있는 컬러 심리테스트를 시작하시려면 버튼을 누르세요.">
 			<img src="./images/start-btn.svg" alt="">
 		</button>
-		<!-- <input class="start-test-btn" type="button" /> -->
 	</main>	
 
 	<!-- 푸터 섹션 -->
@@ -92,7 +124,6 @@
 			대한민국(Seoul, South-Korea)</p>
 			<a class="no-style-to-a-tag" href="mialto:email: _____@gmail.com">email: _____@gmail.com</a><br>
 			<a class="no-style-to-a-tag" href="tel:+010333344444">(010) 3333 4444</a>
-			<!-- 푸터 좌측하단에 배치! -->
 			<div class="sns-icons-wrapper">
 				<a href="#" class="github-icon no-style-to-a-tag"><i class="fab fa-github"></i></a>
 				<a href="#" class="facebook-icon no-style-to-a-tag"><i class="fab fa-facebook-square"></i></a>
